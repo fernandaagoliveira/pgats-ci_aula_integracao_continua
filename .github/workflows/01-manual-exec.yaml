@@ -38,7 +38,7 @@ jobs:
 
       # instalação dos Browsers do Plawright
       - name: Instalando Browsers do Plawright
-        run: yarn plawright install 
+        run: yarn playwright install 
 
       # executar os testes e2e
       - name: Executando testes e2e
