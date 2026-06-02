@@ -44,6 +44,10 @@ jobs:
       - name: Executando testes e2e
         run: yarn run e2e
       
+      - name: Mostrar arquivos gerados
+        if: always()
+        run: find . -type d
+
       # publicar relatório
       - name: Upload Playwright Report
         if: always()
